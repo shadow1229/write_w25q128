@@ -1,0 +1,2382 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+  
+  <link rel="mask-icon" href="https://learn.adafruit.com/assets/adafruit_favicon-fa25640e.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" href="https://learn.adafruit.com/assets/favicon-5362a6c7.ico">
+
+    <title>Overview | Adafruit QSPI DIP Breakout Boards | Adafruit Learning System</title>
+
+  
+  <meta name="guide-title" content="Adafruit QSPI DIP Breakout Boards">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@adafruit">
+  <meta name="twitter:title" content="Adafruit QSPI DIP Breakout Boards">
+  <meta name="twitter:description" content="QSPI capabilities in a DIP breakout package">
+  <meta name="twitter:image:src" content="https://cdn-learn.adafruit.com/guides/images/000/003/701/medium800/5632-03.jpg">
+  <meta name="twitter:domain" content="https://learn.adafruit.com">
+
+
+  <link rel="canonical" href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards/overview">
+
+  <meta name="title" property="og:title" content="Adafruit QSPI DIP Breakout Boards">
+  <meta name="description" property="og:description" content="To make prototyping and designing with QSPI flash a little easier, we designed these breakouts that convert the wide 8-SOIC packages to a cute 0.3&quot; wide DIP. They&#39;re available with 16Mbit, 64Mbit and 128Mbit size chips. We find these handy when testing out different flash sizes, or if we just want to add more storage memory to a project.">
+  <meta property="og:type" content="website">
+  <meta name="image" property="og:image" content="https://cdn-learn.adafruit.com/guides/images/000/003/701/medium800/5632-03.jpg">
+  <meta name="url" property="og:url" content="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards/overview">
+  <meta name="site_name" property="og:site_name" content="Adafruit Learning System">
+
+  <script src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/1720153058307192" async=""></script><script async="" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/fbevents.js"></script><script type="text/javascript" async="" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/js"></script><script async="" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/gtm.js"></script><script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards/overview",
+      "name": "Adafruit QSPI DIP Breakout Boards",
+      "description": "To make prototyping and designing with QSPI flash a little easier, we designed these breakouts that convert the wide 8-SOIC packages to a cute 0.3&quot; wide DIP. They&#39;re available with 16Mbit, 64Mbit and 128Mbit size chips. We find these handy when testing out different flash sizes, or if we just want to add more storage memory to a project.",
+      "publisher": "Adafruit",
+      "datePublished": "2022-11-16T14:25:27-05:00",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://learn.adafruit.com/search?q={search_term}",
+        "query-input": "required name=search_term"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Liz Clark"
+      }
+    }
+  </script>
+
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="D1jiB2B2G3bCcPXshUMAVM7RquaNFLefm6aU_76-_VtpIfE178wcNFBJ8WZUU-_RSlXbifaeuW1GcKdQXy8_SQ">
+  <link rel="alternate" type="application/atom+xml" title="ATOM" href="https://learn.adafruit.com/feed">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://learn.adafruit.com/feed.rss">
+  <link rel="stylesheet" href="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/application-84c0a86b.css" data-turbo-track="reload" media="screen">
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-light-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="https://cdn-shop.adafruit.com/fonts/proximanova/proximanova-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+  <script>
+  var dataLayer = [];
+  function gtag(){dataLayer.push(arguments);}
+</script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PRPXBQ6');</script>
+  <!-- End Google Tag Manager -->
+
+  <script>
+    gtag('js', new Date());
+  </script>
+
+    <script>
+    gtag("event", "view_item_list", {
+      item_list_id: "3701:25300",
+      item_list_name: "adafruit-qspi-dip-breakout-boards/overview",
+      items: [
+  {
+    "item_id": "5632",
+    "item_name": "Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte",
+    "affiliation": "Featured Product"
+  },
+  {
+    "item_id": "5633",
+    "item_name": "Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte",
+    "affiliation": "Featured Product"
+  },
+  {
+    "item_id": "5634",
+    "item_name": "Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte",
+    "affiliation": "Featured Product"
+  }
+]
+    });
+
+  </script>
+
+
+  <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <script>
+    window.rails_env = 'production';
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "https://learn.adafruit.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://learn.adafruit.com/search?q={search_term}",
+        "query-input": "required name=search_term"
+      }
+    }
+  </script>
+    <script src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/application-a53421ab.js" data-turbo-track="reload" type="module"></script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body class="application pages show production">
+    <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRPXBQ6"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="outer-wrapper">
+    <div id="inner-wrapper">
+      
+        <div id="messaging-wrapper" class="messages-container" data-load="https://www.adafruit.com/api/multi_message.php"></div>
+
+
+      <a data-turbo="false" class="skip-to-main" href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#main-content-container">Skip to main content</a>
+
+      <header id="adafruit-header" aria-label="Adafruit header">
+  <div id="small-header">
+  <div class="first-row">
+      <nav aria-label="Adafruit applications menu">
+    <ul class="application-links">
+      <li><a aria-label="Adafruit Shop" href="https://www.adafruit.com/">Shop</a></li>
+      <li class="selected"><a aria-label="Adafruit Learning System" href="https://learn.adafruit.com/">Learn</a></li>
+      <li><a aria-label="Adafruit Blog" href="https://blog.adafruit.com/">Blog</a></li>
+      <li><a aria-label="Adafruit Forums and Support" href="https://forums.adafruit.com/">Forums</a></li>
+      <li><a aria-label="Adafruit IO, the internet of things" href="https://io.adafruit.com/">IO</a></li>
+      <li><a aria-label="Adafruit Youtube Videos" href="https://www.youtube.com/adafruit/live">LIVE!</a></li>
+
+        <li><a aria-label="Adafruit product box subscription" href="https://www.adabox.com/">AdaBox</a></li>
+    </ul>
+  </nav>
+
+  </div>
+
+  <div class="second-row">
+    <div class="row-content">
+      <div id="mobile-header-logo">
+        <a href="https://learn.adafruit.com/">
+        <img id="small-logo" height="50" width="50" alt="Adafruit Logo" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/adafruit_logo_small.png">
+</a>      </div>
+
+      <button id="mobile-menu-button" class="c-hamburger c-hamburger--htx">
+        <span>toggle menu</span>
+      </button>
+
+      <div id="mobile-search-wrapper">
+        <form action="https://learn.adafruit.com/search" method="get">
+          <label for="mobile-search" style="display:none;">Search</label>
+
+          <input id="mobile-search" type="text" name="q" autocomplete="off" data-app-id="W9DMM4OTH0" data-app-key="28a76a2b87be38db12283ebda329425a" data-app-index="learn_guides_production" data-app-uri="https://learn.adafruit.com">
+
+          <button type="submit" aria-label="Submit search"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+      <a id="mobile-header-cart" href="https://www.adafruit.com/shopping_cart">
+        <span class="small-cart-count" aria-live="polite">0</span>
+        <i class="fa fa-shopping-cart"></i>
+</a>
+    </div>
+  </div>
+
+  <nav id="small-header-nav">
+    <div id="small-menu">
+      <ul>
+          <li class="account-info">
+            <div class="welcome-message">Hello, Sangwoo Park</div>
+            <a href="https://accounts.adafruit.com/">My Account</a> | <a data-method="delete" data-turbo="false" href="https://learn.adafruit.com/users/sign_out">Sign Out</a>
+          </li>
+
+            <li><a href="https://accounts.adafruit.com/services/learn">Favorite Guides</a></li>
+        <li><a href="https://adafruit-playground.com/">Playground</a></li>
+          <li><a href="https://learn.adafruit.com/guides/latest">New Guides</a></li>
+          <li><a href="https://learn.adafruit.com/groups">Series</a></li>
+          <li><a href="https://www.adafruit.com/wishlists">Wishlists</a></li>
+          <li>
+            <a class="random-guide-link" aria-label="View a Random Guide" href="https://learn.adafruit.com/guides/random">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+  <g>
+    <path fill="currentColor" d="M478.578,244.475H278.047c-3.81,0-7.42,0.78-10.829,1.961l56.305-56.305c6.306-6.306,9.759-14.706,9.759-23.64
+      c0-8.935-3.454-17.335-9.759-23.64L190.282,9.609c-12.589-12.611-34.692-12.611-47.281,0L9.759,142.85
+      C3.454,149.156,0,157.556,0,166.491s3.454,17.335,9.759,23.64l133.242,133.242c6.306,6.306,14.683,9.759,23.64,9.759
+      c8.957,0,17.335-3.454,23.64-9.759l56.305-56.305c-1.181,3.409-1.961,7.019-1.961,10.829v200.531
+      c0,18.427,14.995,33.422,33.422,33.422h200.531c18.427,0,33.422-14.995,33.422-33.422V277.897
+      C512,259.47,497.005,244.475,478.578,244.475z M182.394,271.368c-4.345,4.345-10.049,6.506-15.753,6.506
+      s-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,248.552,191.106,262.679,182.394,271.368z M182.394,182.244c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,159.428,191.106,173.554,182.394,182.244z M182.394,93.119c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,70.303,191.106,84.429,182.394,93.119z M311.469,467.287c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281C333.75,457.305,323.746,467.287,311.469,467.287z
+       M311.469,333.6c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281
+      C333.75,323.618,323.746,333.6,311.469,333.6z M378.313,400.444c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C400.594,390.462,390.59,400.444,378.313,400.444z
+       M445.156,467.287c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281
+      C467.438,457.305,457.433,467.287,445.156,467.287z M445.156,333.6c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C467.438,323.618,457.433,333.6,445.156,333.6z"></path>
+  </g>
+</g>
+</svg>
+</a>
+          </li>
+      </ul>
+    </div>
+
+    <div id="mobile-search-results"></div>
+  </nav>
+</div>
+
+
+  <div id="large-header">
+    <nav class="first-row" aria-label="Adafruit main site">
+      <div class="row-content">
+          <nav aria-label="Adafruit applications menu">
+    <ul class="application-links">
+      <li><a aria-label="Adafruit Shop" href="https://www.adafruit.com/">Shop</a></li>
+      <li class="selected"><a aria-label="Adafruit Learning System" href="https://learn.adafruit.com/">Learn</a></li>
+      <li><a aria-label="Adafruit Blog" href="https://blog.adafruit.com/">Blog</a></li>
+      <li><a aria-label="Adafruit Forums and Support" href="https://forums.adafruit.com/">Forums</a></li>
+      <li><a aria-label="Adafruit IO, the internet of things" href="https://io.adafruit.com/">IO</a></li>
+      <li><a aria-label="Adafruit Youtube Videos" href="https://www.youtube.com/adafruit/live">LIVE!</a></li>
+
+        <li><a aria-label="Adafruit product box subscription" href="https://www.adabox.com/">AdaBox</a></li>
+    </ul>
+  </nav>
+
+
+        <div id="account">
+              <!-- the username data is used elsewhere $('#account .name').data('username')  -->
+              <span class="name" data-username="sangwoop"></span>
+              <span class="welcome-message">Hi, Sangwoo Park</span> |
+              <div class="account-dropdown dropdown with-toggle">
+                <button class="dropdown-label" aria-haspopup="true">Account</button>
+                <div class="dropdown-container">
+                  <div class="dropdown-content" tabindex="-1">
+                    <ul>
+                      <li><a href="https://accounts.adafruit.com/">My Account</a></li>
+                        <li><a href="https://www.adafruit.com/wishlists">Wishlists</a></li>
+                        <li><a href="https://accounts.adafruit.com/services/learn">Favorite Guides</a></li>
+                      <li>
+                        <a data-method="delete" data-turbo="false" href="https://learn.adafruit.com/users/sign_out">Sign Out</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          <div class="cart">
+            <a aria-label="Shopping Cart, 0 items" aria-live="polite" href="https://www.adafruit.com/shopping_cart"><i class="fa fa-shopping-cart"></i> 0</a>          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="second-row" aria-label="Adafruit Learn application">
+      <div class="row-content">
+        <div class="left-content">
+          <div id="logo">
+            <a title="Adafruit Learning System" href="https://learn.adafruit.com/">
+              <img alt="Adafruit Logo" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/logo_2x.png">
+</a>          </div>
+          <ul class="main-nav-links">
+            <li class="dropdown with-overlay nav-link">
+              <button class="dropdown-label" aria-haspopup="true">Explore &amp; Learn</button>
+              <div class="dropdown-container">
+                <div class="dropdown-content" tabindex="-1">
+                    <div class="flyout">
+      <div class="three-panels">
+        <div class="first-column">
+          <div class="content-header">
+            <span class="title">Learn Categories</span>
+          </div>
+          <div class="categories">
+            <ul>
+                <li><a href="https://learn.adafruit.com/category/3d-printing">3D Printing</a></li>
+                <li><a href="https://learn.adafruit.com/category/adabox">AdaBox</a></li>
+                <li><a href="https://learn.adafruit.com/category/adafruit-products">Adafruit Products</a></li>
+                <li><a href="https://learn.adafruit.com/category/arduino">Arduino Compatibles</a></li>
+                <li><a href="https://learn.adafruit.com/category/breakout-boards">Breakout Boards</a></li>
+                <li><a href="https://learn.adafruit.com/category/circuit-playground">Circuit Playground</a></li>
+                <li><a href="https://learn.adafruit.com/category/circuitpython">CircuitPython</a></li>
+                <li><a href="https://learn.adafruit.com/category/clue">CLUE</a></li>
+                <li><a href="https://learn.adafruit.com/category/community-support">Community Support</a></li>
+                <li><a href="https://learn.adafruit.com/category/components">Components</a></li>
+                <li><a href="https://learn.adafruit.com/category/crickit">Crickit</a></li>
+                <li><a href="https://learn.adafruit.com/category/customer-projects">Customer &amp; Partner Projects</a></li>
+                <li><a href="https://learn.adafruit.com/category/development-boards">Development Boards</a></li>
+                <li><a href="https://learn.adafruit.com/category/educators">Educators</a></li>
+                <li><a href="https://learn.adafruit.com/category/el">EL Wire/Tape/Panel</a></li>
+                <li><a href="https://learn.adafruit.com/category/feather">Feather</a></li>
+                <li><a href="https://learn.adafruit.com/category/gaming-1">Gaming</a></li>
+            </ul>
+            <ul>
+                  <li><a href="https://learn.adafruit.com/category/hacks">Hacks</a></li>
+                  <li><a href="https://learn.adafruit.com/category/internet-of-things-iot">Internet of Things - IOT</a></li>
+                  <li><a href="https://learn.adafruit.com/category/lcds-and-displays">LCDs &amp; Displays</a></li>
+                  <li><a href="https://learn.adafruit.com/category/leds">LEDs</a></li>
+                  <li><a href="https://learn.adafruit.com/category/machine-learning">Machine Learning</a></li>
+                  <li><a href="https://learn.adafruit.com/category/makecode">MakeCode</a></li>
+                  <li><a href="https://learn.adafruit.com/category/maker-business">Maker Business</a></li>
+                  <li><a href="https://learn.adafruit.com/category/micro-bit">micro:bit</a></li>
+                  <li><a href="https://learn.adafruit.com/category/microcontrollers">Microcontrollers</a></li>
+                  <li><a href="https://learn.adafruit.com/category/programming">Programming</a></li>
+                  <li><a href="https://learn.adafruit.com/category/raspberry-pi">Raspberry Pi</a></li>
+                  <li><a href="https://learn.adafruit.com/category/robotics">Robotics &amp; CNC</a></li>
+                  <li><a href="https://learn.adafruit.com/category/sensors">Sensors</a></li>
+                  <li><a href="https://learn.adafruit.com/category/stemma">STEMMA</a></li>
+                  <li><a href="https://learn.adafruit.com/category/tools">Tools</a></li>
+                  <li><a href="https://learn.adafruit.com/category/trellis">Trellis</a></li>
+                  <li><a href="https://learn.adafruit.com/category/wearables">Wearables</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="middle-column">
+        </div>
+
+        <div class="last-column hide-md">
+          <section class="image-content-card">
+  <img class="lazy" aria-hidden="true" alt="Explore, Groups to get your gears turning" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/stemma-690676c3.jpg" style="">
+
+  <div class="text">
+    <div class="main">
+      <span>Explore</span>
+    </div>
+
+    <div class="tagline">
+      <span>Groups to get your gears turning</span>
+    </div>
+  </div>
+
+  <div class="button">
+    <a title="Groups to get your gears turning, Explore" href="https://learn.adafruit.com/explore">Explore Groups</a>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-link">
+              <a class="new-guides-link" href="https://learn.adafruit.com/guides/latest">New Guides</a>
+            </li>
+            <li class="nav-link">
+              <a href="https://adafruit-playground.com/">Playground</a>
+            </li>
+            <li class="nav-link">
+              <a class="random-guide-link" aria-label="View a Random Guide" href="https://learn.adafruit.com/guides/random">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+  <g>
+    <path fill="currentColor" d="M478.578,244.475H278.047c-3.81,0-7.42,0.78-10.829,1.961l56.305-56.305c6.306-6.306,9.759-14.706,9.759-23.64
+      c0-8.935-3.454-17.335-9.759-23.64L190.282,9.609c-12.589-12.611-34.692-12.611-47.281,0L9.759,142.85
+      C3.454,149.156,0,157.556,0,166.491s3.454,17.335,9.759,23.64l133.242,133.242c6.306,6.306,14.683,9.759,23.64,9.759
+      c8.957,0,17.335-3.454,23.64-9.759l56.305-56.305c-1.181,3.409-1.961,7.019-1.961,10.829v200.531
+      c0,18.427,14.995,33.422,33.422,33.422h200.531c18.427,0,33.422-14.995,33.422-33.422V277.897
+      C512,259.47,497.005,244.475,478.578,244.475z M182.394,271.368c-4.345,4.345-10.049,6.506-15.753,6.506
+      s-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,248.552,191.106,262.679,182.394,271.368z M182.394,182.244c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,159.428,191.106,173.554,182.394,182.244z M182.394,93.119c-4.345,4.345-10.049,6.506-15.753,6.506
+      c-5.704,0-11.408-2.161-15.753-6.506c-8.712-8.69-8.712-22.816,0-31.506c8.69-8.712,22.816-8.712,31.506,0
+      C191.106,70.303,191.106,84.429,182.394,93.119z M311.469,467.287c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281C333.75,457.305,323.746,467.287,311.469,467.287z
+       M311.469,333.6c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281c12.277,0,22.281,9.982,22.281,22.281
+      C333.75,323.618,323.746,333.6,311.469,333.6z M378.313,400.444c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C400.594,390.462,390.59,400.444,378.313,400.444z
+       M445.156,467.287c-12.277,0-22.281-9.982-22.281-22.281c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281
+      C467.438,457.305,457.433,467.287,445.156,467.287z M445.156,333.6c-12.277,0-22.281-9.982-22.281-22.281
+      c0-12.299,10.004-22.281,22.281-22.281s22.281,9.982,22.281,22.281C467.438,323.618,457.433,333.6,445.156,333.6z"></path>
+  </g>
+</g>
+</svg>
+</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="right-content">
+            <div class="search-wrapper">
+              <div id="search-info" data-page="" data-app-id="W9DMM4OTH0" data-app-key="28a76a2b87be38db12283ebda329425a" data-app-index="learn_guides_production" data-app-uri="https://learn.adafruit.com"></div>
+              <div id="search"><div class="ais-SearchBox"><form action="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all" role="search" class="ais-SearchBox-form" novalidate=""><input class="ais-SearchBox-input" type="search" placeholder="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" maxlength="512" aria-label="Search"><button class="ais-SearchBox-submit" type="submit" title="Submit the search query" hidden=""><svg class="ais-SearchBox-submitIcon" width="10" height="10" viewBox="0 0 40 40" aria-hidden="true"><path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"></path></svg></button><button class="ais-SearchBox-reset" type="reset" title="Clear the search query" hidden=""><svg class="ais-SearchBox-resetIcon" viewBox="0 0 20 20" width="10" height="10" aria-hidden="true"><path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z"></path></svg></button><span class="ais-SearchBox-loadingIndicator" hidden=""><svg aria-label="Results are loading" class="ais-SearchBox-loadingIcon" width="16" height="16" viewBox="0 0 38 38" stroke="#444" aria-hidden="true"><g fill="none" fill-rule="evenodd"><g transform="translate(1 1)" stroke-width="2"><circle stroke-opacity=".5" cx="18" cy="18" r="18"></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animatetransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"></animatetransform></path></g></g></svg></span></form></div></div>
+              <i class="fa fa-search"></i>
+            </div>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+      <turbo-frame id="flash"></turbo-frame>
+      <main id="main-content">
+        <div id="main-content-container" tabindex="-1">
+
+            <div class="toolbar-primary ">
+    <div class="content">
+      <div class="left-content">
+        <div class="breadcrumbs" aria-label="Breadcrumbs">
+          <a href="https://learn.adafruit.com/"><i class="fa fa-home" role="img" title="Learn home"></i></a>
+
+            <i class="fa fa-chevron-right separator"></i>
+            Adafruit QSPI DIP Breakout Boards
+        </div>
+      </div>
+
+      <div class="right-content">
+        
+      </div>
+    </div>
+  </div>
+
+
+          
+
+
+<article id="content-wrapper" lang="en" class="single-page" data-page-id="25300" data-guide-id="3701">
+
+  
+
+  <header aria-label="Guide information" class="title-header">
+  <h1 class="title" aria-label="Guide title">Adafruit QSPI DIP Breakout Boards</h1>
+  <div class="details">
+      <div style="background-color: #0062c7" class="user-image blinka-avatar"></div>
+
+      <div class="metadata">
+          <div class="byline">
+    by
+    <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/BlitzCityDIY">Liz Clark</a>
+
+  </div>
+
+        <div class="updated">
+            published November 16, 2022, last edited January 18, 2025<br>
+    last major update November 16, 2022
+
+        </div>
+        <div class="small">
+          posted in <a href="https://learn.adafruit.com/category/components">Components</a>
+<a href="https://learn.adafruit.com/category/adafruit-products">Adafruit Products</a>
+<a href="https://learn.adafruit.com/category/arduino">Arduino Compatibles</a>
+<a href="https://learn.adafruit.com/category/circuitpython">CircuitPython</a>
+  <a href="https://learn.adafruit.com/category/breakout-boards">Breakout Boards</a>/
+<a href="https://learn.adafruit.com/category/storage">Storage</a>
+
+        </div>
+      </div>
+
+    <span class="right-content" role="region" aria-live="polite">
+      <div class="badges"></div>
+      <div class="buttons">
+
+        <span id="guide-favorite">
+    <a data-turbo-method="post" class="bg-btn-secondary" aria-label="Select to Save this guide." href="https://learn.adafruit.com/guides/3701/favorites">
+      <i class="fa fa-bookmark-o"></i> Save
+</a></span>
+
+
+          <a class="bg-btn-secondary" href="https://cdn-learn.adafruit.com/downloads/pdf/adafruit-qspi-dip-breakout-boards.pdf">
+              <i class="fa fa-download"></i> Download
+</a>
+          <span class="add-reaction dropdown floating-dropdown" data-controller="reactions" data-reactions-target="dropdown">
+  <button class="dropdown-icon bg-btn-secondary" aria-label="Select to add a reaction." aria-haspopup="true" data-turbo="false">
+    😍 Add Reaction
+  </button>
+
+  <div class="dropdown-container">
+    <div class="dropdown-content" tabindex="-1">
+      <form data-reactions-target="form" action="https://learn.adafruit.com/guides/3701/reactions/toggle_reaction" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="put" autocomplete="off"><input type="hidden" name="authenticity_token" value="D1jiB2B2G3bCcPXshUMAVM7RquaNFLefm6aU_76-_VtpIfE178wcNFBJ8WZUU-_RSlXbifaeuW1GcKdQXy8_SQ" autocomplete="off">
+        <div class="reaction-options">
+          <input type="hidden" name="reaction[emoji]" value="" autocomplete="off">
+            <label for="reaction_emoji_heart_eyes">
+              😍
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="heart_eyes" name="reaction[emoji]" id="reaction_emoji_heart_eyes">
+</label>
+            <label for="reaction_emoji_fire">
+              🔥
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="fire" name="reaction[emoji]" id="reaction_emoji_fire">
+</label>
+            <label for="reaction_emoji_two_hearts">
+              💕
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="two_hearts" name="reaction[emoji]" id="reaction_emoji_two_hearts">
+</label>
+            <label for="reaction_emoji_sparkling_heart">
+              💖
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="sparkling_heart" name="reaction[emoji]" id="reaction_emoji_sparkling_heart">
+</label>
+            <label for="reaction_emoji_bulb">
+              💡
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="bulb" name="reaction[emoji]" id="reaction_emoji_bulb">
+</label>
+            <label for="reaction_emoji_exploding_head">
+              🤯
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="exploding_head" name="reaction[emoji]" id="reaction_emoji_exploding_head">
+</label>
+            <label for="reaction_emoji_hugging_face">
+              🤗
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="hugging_face" name="reaction[emoji]" id="reaction_emoji_hugging_face">
+</label>
+            <label for="reaction_emoji_ok_hand">
+              👌
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="ok_hand" name="reaction[emoji]" id="reaction_emoji_ok_hand">
+</label>
+            <label for="reaction_emoji_raised_hands">
+              🙌
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="raised_hands" name="reaction[emoji]" id="reaction_emoji_raised_hands">
+</label>
+            <label for="reaction_emoji_thumbsup">
+              👍
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="thumbsup" name="reaction[emoji]" id="reaction_emoji_thumbsup">
+</label>
+            <label for="reaction_emoji_grinning">
+              😀
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="grinning" name="reaction[emoji]" id="reaction_emoji_grinning">
+</label>
+            <label for="reaction_emoji_sunglasses">
+              😎
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="sunglasses" name="reaction[emoji]" id="reaction_emoji_sunglasses">
+</label>
+            <label for="reaction_emoji_hushed">
+              😲
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="hushed" name="reaction[emoji]" id="reaction_emoji_hushed">
+</label>
+            <label for="reaction_emoji_heart_eyes_cat">
+              😻
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="heart_eyes_cat" name="reaction[emoji]" id="reaction_emoji_heart_eyes_cat">
+</label>
+            <label for="reaction_emoji_sparkles">
+              ✨
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="sparkles" name="reaction[emoji]" id="reaction_emoji_sparkles">
+</label>
+            <label for="reaction_emoji_first_place_medal">
+              🥇
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="first_place_medal" name="reaction[emoji]" id="reaction_emoji_first_place_medal">
+</label>
+            <label for="reaction_emoji_sun_with_face">
+              🌞
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="sun_with_face" name="reaction[emoji]" id="reaction_emoji_sun_with_face">
+</label>
+            <label for="reaction_emoji_stars">
+              🌠
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="stars" name="reaction[emoji]" id="reaction_emoji_stars">
+</label>
+            <label for="reaction_emoji_zap">
+              ⚡️
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="zap" name="reaction[emoji]" id="reaction_emoji_zap">
+</label>
+            <label for="reaction_emoji_robot_face">
+              🤖
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="robot_face" name="reaction[emoji]" id="reaction_emoji_robot_face">
+</label>
+            <label for="reaction_emoji_ghost">
+              👻
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="ghost" name="reaction[emoji]" id="reaction_emoji_ghost">
+</label>
+            <label for="reaction_emoji_four_leaf_clover">
+              🍀
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="four_leaf_clover" name="reaction[emoji]" id="reaction_emoji_four_leaf_clover">
+</label>
+            <label for="reaction_emoji_snowflake">
+              ❄️
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="snowflake" name="reaction[emoji]" id="reaction_emoji_snowflake">
+</label>
+            <label for="reaction_emoji_turkey">
+              🦃
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="turkey" name="reaction[emoji]" id="reaction_emoji_turkey">
+</label>
+            <label for="reaction_emoji_maple_leaf">
+              🍁
+              <input class="hidden" data-action="change-&gt;reactions#submit" type="radio" value="maple_leaf" name="reaction[emoji]" id="reaction_emoji_maple_leaf">
+</label>        </div>
+</form>    </div>
+  </div>
+</span>
+
+      </div>
+    </span>
+  </div>
+</header>
+
+
+  <div class="left-sidebar-layout" role="region" aria-label="Page content">
+    <div class="sidebar">
+  <nav aria-label="Guide navigation">
+      <div class="data-group">
+        <ul class="nested-page-list" aria-label="Guide pages">
+           <li class="parent active">
+
+      <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#overview" class="published">Overview</a>
+
+
+</li>
+ <li class="parent ">
+
+      <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#pinouts" class="published">Pinouts</a>
+
+
+</li>
+ <li class="parent ">
+
+      <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#arduino" class="published">Arduino</a>
+
+
+        <ul class="page-child nav">
+          	<li class="published ">
+
+		  <a href="https://github.com/adafruit/Adafruit_SPIFlash#adafruit-spi-flash" target="blank" class="published">Arduino Docs <i class="fa fa-external-link"></i></a>
+
+</li>
+
+        </ul>
+</li>
+ <li class="parent ">
+
+      <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#downloads" class="published">Downloads</a>
+
+
+</li>
+
+        </ul>
+
+        <div class="single-page-spacer"></div>
+        <ul class="nested-page-list" aria-label="Guide resources">
+          <li>
+                <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards">Multiple pages</a>
+          </li>
+          <li>
+                <div id="feedback_page_25300">
+      <a data-turbo-stream="true" class="feedback-link" title="Feedback? Corrections?" rel="nofollow" href="https://learn.adafruit.com/feedback/new?page_id=25300">
+            Feedback?  Corrections?
+</a>    </div>
+
+          </li>
+        </ul>
+      </div>
+
+    
+
+      <section>
+        <div class="data-header">
+          Primary Products
+        </div>
+
+        <div class="small-product-list">
+            
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5632" id="product_analytics_5632" value="{
+  &quot;item_list_id&quot;: 3701,
+  &quot;item_list_name&quot;: &quot;adafruit-qspi-dip-breakout-boards&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5632,
+    &quot;item_name&quot;: &quot;Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" autocomplete="off">
+
+    <div class="product-image">
+        <img class="image-preview product-asset" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/5632-03.jpg" alt="Angled shot of small DIP breakout." data-error="/assets/missing%2Fmissing.png">
+
+    </div>
+
+    <div class="product-details">
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5632">Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte</a>
+      </div>
+
+        <div class="product-price">$2.50</div>
+
+      <a id="5632-product" class="product-buy btn-primary " data-pid="5632" data-qty="1" data-name="Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5632">Add  to Cart</a>
+    </div>
+  </li>
+
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5633" id="product_analytics_5633" value="{
+  &quot;item_list_id&quot;: 3701,
+  &quot;item_list_name&quot;: &quot;adafruit-qspi-dip-breakout-boards&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5633,
+    &quot;item_name&quot;: &quot;Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" autocomplete="off">
+
+    <div class="product-image">
+        <img class="image-preview product-asset" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/5633-03.jpg" alt="Angled shot of DIP breakout board." data-error="/assets/missing%2Fmissing.png">
+
+    </div>
+
+    <div class="product-details">
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5633">Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte</a>
+      </div>
+
+        <div class="product-price">$2.75</div>
+
+      <a id="5633-product" class="product-buy btn-primary " data-pid="5633" data-qty="1" data-name="Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5633">Add  to Cart</a>
+    </div>
+  </li>
+
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5634" id="product_analytics_5634" value="{
+  &quot;item_list_id&quot;: 3701,
+  &quot;item_list_name&quot;: &quot;adafruit-qspi-dip-breakout-boards&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5634,
+    &quot;item_name&quot;: &quot;Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" autocomplete="off">
+
+    <div class="product-image">
+        <img class="image-preview product-asset" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/5634-03.jpg" alt="Angled shot of DIP breakout board." data-error="/assets/missing%2Fmissing.png">
+
+    </div>
+
+    <div class="product-details">
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5634">Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte</a>
+      </div>
+
+
+      <a id="5634-product" class="notify product-buy btn-primary " data-pid="5634" data-qty="1" data-name="Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5634">Out of Stock</a>
+    </div>
+  </li>
+
+        </div>
+      </section>
+
+      <section class="list-with-header">
+        <div class="list-header">
+          Featured Products
+          <span class="view-all">
+              <a class="featured-products-link" href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards/featured_products">view all</a>
+          </span>
+        </div>
+
+        <ul class="small-product-list">
+          
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5632" id="product_analytics_5632" value="{
+  &quot;item_list_id&quot;: 3701,
+  &quot;item_list_name&quot;: &quot;adafruit-qspi-dip-breakout-boards&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5632,
+    &quot;item_name&quot;: &quot;Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" autocomplete="off">
+
+    <div class="product-image">
+        <img class="image-preview product-asset" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/5632-03.jpg" alt="Angled shot of small DIP breakout." data-error="/assets/missing%2Fmissing.png">
+
+    </div>
+
+    <div class="product-details">
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5632">Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte</a>
+      </div>
+
+        <div class="product-price">$2.50</div>
+
+      <a id="5632-product" class="product-buy btn-primary " data-pid="5632" data-qty="1" data-name="Adafruit QSPI DIP Breakout Board - W25Q16 - 16 MBit 2 MByte" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5632">Add  to Cart</a>
+    </div>
+  </li>
+
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5633" id="product_analytics_5633" value="{
+  &quot;item_list_id&quot;: 3701,
+  &quot;item_list_name&quot;: &quot;adafruit-qspi-dip-breakout-boards&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5633,
+    &quot;item_name&quot;: &quot;Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" autocomplete="off">
+
+    <div class="product-image">
+        <img class="image-preview product-asset" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/5633-03.jpg" alt="Angled shot of DIP breakout board." data-error="/assets/missing%2Fmissing.png">
+
+    </div>
+
+    <div class="product-details">
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5633">Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte</a>
+      </div>
+
+        <div class="product-price">$2.75</div>
+
+      <a id="5633-product" class="product-buy btn-primary " data-pid="5633" data-qty="1" data-name="Adafruit QSPI DIP Breakout Board - W25Q64 - 64 MBit 8 MByte" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5633">Add  to Cart</a>
+    </div>
+  </li>
+
+
+  <li class="small-product-content-card">
+    <input type="hidden" name="product_analytics_5634" id="product_analytics_5634" value="{
+  &quot;item_list_id&quot;: 3701,
+  &quot;item_list_name&quot;: &quot;adafruit-qspi-dip-breakout-boards&quot;,
+  &quot;items&quot;: {
+    &quot;item_id&quot;: 5634,
+    &quot;item_name&quot;: &quot;Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte&quot;,
+    &quot;affiliation&quot;: &quot;Featured Product&quot;
+  }
+}" class="product-json" autocomplete="off">
+
+    <div class="product-image">
+        <img class="image-preview product-asset" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/5634-03.jpg" alt="Angled shot of DIP breakout board." data-error="/assets/missing%2Fmissing.png">
+
+    </div>
+
+    <div class="product-details">
+      <div>
+        <a class="product-title" href="https://www.adafruit.com/product/5634">Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte</a>
+      </div>
+
+
+      <a id="5634-product" class="notify product-buy btn-primary " data-pid="5634" data-qty="1" data-name="Adafruit QSPI DIP Breakout Board - W25Q128 - 128 MBit 16 MByte" target="_blank" aria-live="polite" rel="noopener noreferrer" href="https://www.adafruit.com/product/5634">Out of Stock</a>
+    </div>
+  </li>
+
+        </ul>
+      </section>
+
+  </nav>
+</div>
+
+
+    <div>
+      <div class="badges headline-badges">
+            <div class="badge favorites " title="Saves">
+              5
+            </div>
+
+
+          <div class="badge skill-level" title="Skill Level">
+            Beginner
+          </div>
+
+          <div class="badge skill-level" title="Guide Type">
+            Product guide
+          </div>
+
+        <turbo-frame id="display_reactions"></turbo-frame>
+      </div>
+
+            <h2 class="title" aria-label="Page title">
+              <span id="overview">Overview</span>
+            </h2>
+
+            <div class="page-content">
+                <div class="" role="region" aria-label="Page content">
+        <div class="element image-element" aria-label="Image: components_5634-04.jpg">
+    <a href="https://learn.adafruit.com/assets/123219">
+        <img class="123219-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/123/219/small360/components_5634-04.jpg?1690985761 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/123/219/medium640/components_5634-04.jpg?1690985761 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/123/219/medium800/components_5634-04.jpg?1690985761 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/123/219/large1024/components_5634-04.jpg?1690985761 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_5634-04.jpg" alt="components_5634-04.jpg">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+        <p>For many modern and powerful chips like the RP2040, ESP32, RT10xx and STM32 series microcontrollers, designers can save money and reduce the number of chip options by not including building in the Flash memory used to store code and resources. Instead, an external QSPI Flash memory chip is wired up that can provide up to 16 Megabytes (a.k.a 128 Megabits) of memory. It's not as fast as if it were on the microcontroller internal bus but with Quad SPI I/O and some clever caching by the chip designer, it's pretty effective!</p>
+<p>To make prototyping and designing with QSPI flash a little easier, we designed these breakouts that convert the wide 8-SOIC packages to a cute 0.3" wide DIP. We find these handy when testing out different flash sizes, or if we just want to add more storage memory to a project.</p>
+      
+
+
+
+
+
+
+
+</div>
+
+        <div class="element image-element" aria-label="Image: components_5634-05.jpg">
+    <a href="https://learn.adafruit.com/assets/123220">
+        <img class="123220-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/123/220/small360/components_5634-05.jpg?1690985773 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/123/220/medium640/components_5634-05.jpg?1690985773 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/123/220/medium800/components_5634-05.jpg?1690985773 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/123/220/large1024/components_5634-05.jpg?1690985773 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_5634-05.jpg" alt="components_5634-05.jpg">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+        <p>There are three variants for these breakouts:</p>
+<ul>
+<li><a href="https://www.adafruit.com/product/5632"><strong>W25Q16JVSSIQ</strong>, a 3.3V power and logic 16-Megabit / 2 Mega-byte chip.</a></li>
+<li><a href="https://www.adafruit.com/product/5633"><strong>W25Q64JVSSIQ</strong><span>, a 3.3V power and logic 64-Megabit / 8 Mega-byte chip.</span></a></li>
+<li><a href="https://www.adafruit.com/product/5634"><span><strong>W25Q128JVSSIQ</strong>, a 3.3V power and logic 128-Megabit / 16 Mega-byte chip.</span></a></li>
+</ul>
+<p>Note that the Q at the end means that the Quad Enable bit is permanently set in the status register. If you're using this in QSPI mode, then it'll work right out of the box. If you're using this in SPI mode, the 'hold' and 'write protect' pins don't do anything, so just connect them to 3.3V.</p>
+<p><a href="https://github.com/adafruit/Adafruit_SPIFlash">In Arduino, we have the Adafruit_SPIFlash library</a><span>&nbsp;</span>that can be used to interface with this chip - but don't forget it's only good for 3.3V logic and power!</p>
+<p>In CircuitPython,<span>&nbsp;</span><a href="https://github.com/adafruit/nvm.toml/tree/main/flash/winbond">this chip has a TOML definition file</a><span>&nbsp;</span>so you could use it in a board definition.</p>
+<p>Comes with a bit of header that can be used to solder in and plug into a breadboard or&nbsp; to replace an existing socketed SPI flash DIP chip.</p>
+      
+
+
+
+
+</div>
+
+  </div>
+
+
+              <div class="page-last-updated">
+  <p>Page last edited March 08, 2024</p>
+  <p>Text editor powered by <a href="https://www.tiny.cloud/">tinymce</a>.</p>
+</div>
+
+            </div>
+            <h2 class="title" aria-label="Page title">
+              <span id="pinouts">Pinouts</span>
+            </h2>
+
+            <div class="page-content">
+                <div class="" role="region" aria-label="Page content">
+        <div class="element image-element" aria-label="Image: components_double.jpg">
+    <a href="https://learn.adafruit.com/assets/116700">
+        <img class="116700-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/700/small360/components_double.jpg?1668540331 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/700/medium640/components_double.jpg?1668540331 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/700/medium800/components_double.jpg?1668540331 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/700/large1024/components_double.jpg?1668540331 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_double.jpg" alt="components_double.jpg">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#power-pins-3131518" class="anchor-link"><span class="fa fa-link"></span></a><span id="power-pins-3131518" class="anchor-link-target"></span>
+</div>Power Pins</h2>
+<ul>
+<li>
+<strong>3V</strong><span>&nbsp;</span>- this is the 3V power input pin for the flash chip.<span> These chips can only be used with 3.3V power and logic!</span>
+</li>
+<li>
+<strong>G</strong><span>&nbsp;</span>- common ground for power and logic.</li>
+</ul>
+      
+</div>
+
+      <!-- Update area label with warning type when we can get this information -->
+<div class="alert-element alert-warning" aria-label="Alert" aria-describedby="alert-content-3131520">
+  <i class="fa fa-exclamation-circle"></i>
+  <span id="alert-content-3131520" class="alert-content">Only use these breakouts with 3.3V logic and power!</span>
+</div>
+
+      <div class="text-element">
+  
+  
+  
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#spi-logic-pins-3131519" class="anchor-link"><span class="fa fa-link"></span></a><span id="spi-logic-pins-3131519" class="anchor-link-target"></span>
+</div>SPI Logic Pins</h2>
+<ul>
+<li>
+<strong>CS</strong> - <strong>C</strong>hip <strong>S</strong>elect input. Enables and disables device operation. Set low to select the device to begin a SPI transaction. Marked on the front of the board with a white square.</li>
+<li>
+<strong>IO0</strong> - Data Input/Data <strong>I</strong>nput <strong>O</strong>utput <strong>0 </strong>(MOSI). Used for serially writing instructions, addresses or data to the device on the rising edge of CLK.</li>
+<li>
+<strong>IO1 </strong>- Data Output/Data <strong>I</strong>nput <strong>O</strong>utput <strong>1 </strong>(MISO). Used for reading data or status from the device on the falling edge of <strong>CLK</strong>.</li>
+<li>
+<strong>IO2&nbsp;</strong>- Write Protect input/Data <strong>I</strong>nput <strong>O</strong>utput <strong>2</strong>. Used to prevent the status register from being written to. This pin is active low.</li>
+<li>
+<strong>IO3&nbsp;</strong>- Hold Input/Data <strong>I</strong>nput <strong>O</strong>utput <strong>3</strong>. Allows the device to be paused while it is actively selected.</li>
+<li>
+<strong>CLK&nbsp;</strong>- Serial <strong>Cl</strong>oc<strong>k</strong> Input (SCK). Provides the timing for serial input and output operations.</li>
+</ul>
+      
+
+
+
+</div>
+
+  </div>
+
+
+              <div class="page-last-updated">
+  <p>Page last edited March 08, 2024</p>
+  <p>Text editor powered by <a href="https://www.tiny.cloud/">tinymce</a>.</p>
+</div>
+
+            </div>
+            <h2 class="title" aria-label="Page title">
+              <span id="arduino">Arduino</span>
+            </h2>
+
+            <div class="page-content">
+                <div class="" role="region" aria-label="Page content">
+      <div class="text-element">
+  
+  
+        <p><span class="s1">Using a QSPI DIP breakout board</span><span class="s1"><span>&nbsp;</span>with Arduino involves wiring up the QSPI chip to your Arduino-compatible microcontroller, installing the <a href="https://github.com/adafruit/Adafruit_SPIFlash">Adafruit_SPIFlash</a> library<span>&nbsp;</span><span>and running the provided example code.</span></span></p>
+      
+
+</div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#wiring-3131522" class="anchor-link"><span class="fa fa-link"></span></a><span id="wiring-3131522" class="anchor-link-target"></span>
+</div>Wiring</h2>
+<p>Wire as shown for a<span>&nbsp;</span><strong>3.3V</strong><span>&nbsp;</span>board like a Feather. <span>These breakouts are <strong>only good for 3.3V logic and power!</strong> Do not use them with a 5V board, like an Arduino Uno!</span></p>
+<p>Here is an Adafruit Feather M4 wired up to the QSPI DIP breakout board on a solderless breadboard:</p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+      <div class="side-element">
+    <div class="side-images">
+      <div class="anchor-anchor">
+        <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#step-3131523" class="anchor-link"><span class="fa fa-link"></span></a>
+      </div>
+      <span id="step-3131523" class="anchor-link-target"></span>
+      <a class="large-side-image-link" href="https://learn.adafruit.com/assets/116706">
+    <img class="116706-asset medium-side-image" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_arduinoBB_bb.jpg" alt="components_arduinoBB_bb.jpg">
+</a>
+
+    </div>
+  <div class="side-text"><div class="text">
+            <ul>
+<li>
+<strong>Board 3.3V</strong> to <strong>breakout 3V (red wire)</strong>
+</li>
+<li>
+<strong>Board GND</strong> to <strong>breakout G (black wire)</strong>
+</li>
+<li>
+<strong>Board pin 11</strong> to <strong>breakout IO0 (blue wire)</strong>
+</li>
+<li>
+<strong>Board pin 12</strong> to <strong>breakout IO1 (green wire)</strong>
+</li>
+<li>
+<strong>Board pin 13</strong> to <strong>breakout CLK (yellow wire)</strong>
+</li>
+</ul>
+          </div></div>
+</div>
+
+      <!-- Update area label with warning type when we can get this information -->
+<div class="alert-element alert-warning" aria-label="Alert" aria-describedby="alert-content-3131548">
+  <i class="fa fa-exclamation-circle"></i>
+  <span id="alert-content-3131548" class="alert-content">Only use these breakouts with 3.3V logic and power!</span>
+</div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#library-installation-3131524" class="anchor-link"><span class="fa fa-link"></span></a><span id="library-installation-3131524" class="anchor-link-target"></span>
+</div>Library Installation</h2>
+<p><span>You can install the&nbsp;</span><strong>Adafruit SPIFlash<span>&nbsp;</span></strong><span>library</span><span>&nbsp;for Arduino using the Library Manager in the Arduino IDE.</span></p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        <div class="element image-element" aria-label="Image: components_Arduino_Open_Library_Manager.png">
+    <a href="https://learn.adafruit.com/assets/116702">
+        <img class="116702-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/702/small360/components_Arduino_Open_Library_Manager.png?1668542328 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/702/medium640/components_Arduino_Open_Library_Manager.png?1668542328 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/702/medium800/components_Arduino_Open_Library_Manager.png?1668542328 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/702/large1024/components_Arduino_Open_Library_Manager.png?1668542328 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_Arduino_Open_Library_Manager.png" alt="components_Arduino_Open_Library_Manager.png">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <p><span>Click the&nbsp;</span><strong>Manage Libraries ...</strong><span>&nbsp;menu item, search for&nbsp;</span><strong>Adafruit SPIFlash</strong><span>,&nbsp;and select the&nbsp;</span><strong>Adafruit SPIFlash</strong><span>&nbsp;library:</span></p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        <div class="element image-element" aria-label="Image: components_libManager.jpg">
+    <a href="https://learn.adafruit.com/assets/116704">
+        <img class="116704-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/704/small360/components_libManager.jpg?1668548354 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/704/medium640/components_libManager.jpg?1668548354 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/704/medium800/components_libManager.jpg?1668548354 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/704/large1024/components_libManager.jpg?1668548354 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_libManager.jpg" alt="components_libManager.jpg">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <p><span>If asked about dependencies, click "Install all".</span></p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        <div class="element image-element" aria-label="Image: components_arduinoDependencies.jpg">
+    <a href="https://learn.adafruit.com/assets/116705">
+        <img class="116705-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/705/small360/components_arduinoDependencies.jpg?1668548366 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/705/medium640/components_arduinoDependencies.jpg?1668548366 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/705/medium800/components_arduinoDependencies.jpg?1668548366 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/705/large1024/components_arduinoDependencies.jpg?1668548366 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_arduinoDependencies.jpg" alt="components_arduinoDependencies.jpg">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <p><span>If the "Dependencies" window does not come up, then you already have the dependencies installed.&nbsp;</span></p>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+      <!-- Update area label with warning type when we can get this information -->
+<div class="alert-element alert-warning" aria-label="Alert" aria-describedby="alert-content-3131529">
+  <i class="fa fa-exclamation-circle"></i>
+  <span id="alert-content-3131529" class="alert-content">If the dependencies are already installed, you must make sure you update them through the Arduino Library Manager before loading the example!</span>
+</div>
+
+      <div class="text-element">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#example-code-3131531" class="anchor-link"><span class="fa fa-link"></span></a><span id="example-code-3131531" class="anchor-link-target"></span>
+</div>Example Code</h2>
+      
+
+
+
+
+
+
+
+
+
+</div>
+
+          <div class="code-element" aria-label="Code element">
+  <div class="download-code ">
+      <a data-turbo="false" class="download-button" href="https://learn.adafruit.com/elements/3131532/download">
+        <i class="fa fa-cloud"></i> Download File
+</a>    <div class="code-copy-container">
+      <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#" class="code-copy-button"><i class="fa fa-clipboard"></i> Copy Code</a>
+    </div>
+  </div>
+  <pre class="code-text-only" style="display: none;">/*
+  SD card read/write
+
+ This example shows how to read and write data to and from an SD card file
+ The circuit:
+ * SD card attached to SPI bus as follows:
+ ** MOSI - pin 11
+ ** MISO - pin 12
+ ** CLK - pin 13
+
+ created   Nov 2010
+ by David A. Mellis
+ modified 9 Apr 2012
+ by Tom Igoe
+
+ This example code is in the public domain.
+
+ */
+
+#include &lt;SPI.h&gt;
+
+#include "SdFat.h"
+
+#include "Adafruit_SPIFlash.h"
+
+// for flashTransport definition
+#include "flash_config.h"
+
+Adafruit_SPIFlash flash(&amp;flashTransport);
+
+// file system object from SdFat
+FatVolume fatfs;
+File32 myFile;
+
+void setup() {
+  // Open serial communications and wait for port to open:
+  Serial.begin(115200);
+  while (!Serial) {
+    delay(
+        10); // wait for serial port to connect. Needed for native USB port only
+  }
+
+  Serial.println("Initializing Filesystem on external flash...");
+
+  // Init external flash
+  flash.begin();
+
+  // Open file system on the flash
+  if (!fatfs.begin(&amp;flash)) {
+    Serial.println("Error: filesystem is not existed. Please try SdFat_format "
+                   "example to make one.");
+    while (1) {
+      yield();
+      delay(1);
+    }
+  }
+
+  Serial.println("initialization done.");
+
+  // open the file. note that only one file can be open at a time,
+  // so you have to close this one before opening another.
+  myFile = fatfs.open("test.txt", FILE_WRITE);
+
+  // if the file opened okay, write to it:
+  if (myFile) {
+    Serial.print("Writing to test.txt...");
+    myFile.println("testing 1, 2, 3.");
+    // close the file:
+    myFile.close();
+    Serial.println("done.");
+  } else {
+    // if the file didn't open, print an error:
+    Serial.println("error opening test.txt");
+  }
+
+  // re-open the file for reading:
+  myFile = fatfs.open("test.txt");
+  if (myFile) {
+    Serial.println("test.txt:");
+
+    // read from the file until there's nothing else in it:
+    while (myFile.available()) {
+      Serial.write(myFile.read());
+    }
+    // close the file:
+    myFile.close();
+  } else {
+    // if the file didn't open, print an error:
+    Serial.println("error opening test.txt");
+  }
+}
+
+void loop() {
+  // nothing happens after setup
+}
+</pre>
+  <pre class="prettyprint embed hljs language-cpp"><span class="hljs-comment">/*
+  SD card read/write
+
+ This example shows how to read and write data to and from an SD card file
+ The circuit:
+ * SD card attached to SPI bus as follows:
+ ** MOSI - pin 11
+ ** MISO - pin 12
+ ** CLK - pin 13
+
+ created   Nov 2010
+ by David A. Mellis
+ modified 9 Apr 2012
+ by Tom Igoe
+
+ This example code is in the public domain.
+
+ */</span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;SPI.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">"SdFat.h"</span></span>
+
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">"Adafruit_SPIFlash.h"</span></span>
+
+<span class="hljs-comment">// for flashTransport definition</span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">"flash_config.h"</span></span>
+
+<span class="hljs-function">Adafruit_SPIFlash <span class="hljs-title">flash</span><span class="hljs-params">(&amp;flashTransport)</span></span>;
+
+<span class="hljs-comment">// file system object from SdFat</span>
+FatVolume fatfs;
+File32 myFile;
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">setup</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// Open serial communications and wait for port to open:</span>
+  Serial.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+  <span class="hljs-keyword">while</span> (!Serial) {
+    <span class="hljs-built_in">delay</span>(
+        <span class="hljs-number">10</span>); <span class="hljs-comment">// wait for serial port to connect. Needed for native USB port only</span>
+  }
+
+  Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Initializing Filesystem on external flash..."</span>);
+
+  <span class="hljs-comment">// Init external flash</span>
+  flash.<span class="hljs-built_in">begin</span>();
+
+  <span class="hljs-comment">// Open file system on the flash</span>
+  <span class="hljs-keyword">if</span> (!fatfs.<span class="hljs-built_in">begin</span>(&amp;flash)) {
+    Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Error: filesystem is not existed. Please try SdFat_format "</span>
+                   <span class="hljs-string">"example to make one."</span>);
+    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+      <span class="hljs-built_in">yield</span>();
+      <span class="hljs-built_in">delay</span>(<span class="hljs-number">1</span>);
+    }
+  }
+
+  Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"initialization done."</span>);
+
+  <span class="hljs-comment">// open the file. note that only one file can be open at a time,</span>
+  <span class="hljs-comment">// so you have to close this one before opening another.</span>
+  myFile = fatfs.<span class="hljs-built_in">open</span>(<span class="hljs-string">"test.txt"</span>, FILE_WRITE);
+
+  <span class="hljs-comment">// if the file opened okay, write to it:</span>
+  <span class="hljs-keyword">if</span> (myFile) {
+    Serial.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Writing to test.txt..."</span>);
+    myFile.<span class="hljs-built_in">println</span>(<span class="hljs-string">"testing 1, 2, 3."</span>);
+    <span class="hljs-comment">// close the file:</span>
+    myFile.<span class="hljs-built_in">close</span>();
+    Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"done."</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// if the file didn't open, print an error:</span>
+    Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"error opening test.txt"</span>);
+  }
+
+  <span class="hljs-comment">// re-open the file for reading:</span>
+  myFile = fatfs.<span class="hljs-built_in">open</span>(<span class="hljs-string">"test.txt"</span>);
+  <span class="hljs-keyword">if</span> (myFile) {
+    Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"test.txt:"</span>);
+
+    <span class="hljs-comment">// read from the file until there's nothing else in it:</span>
+    <span class="hljs-keyword">while</span> (myFile.<span class="hljs-built_in">available</span>()) {
+      Serial.<span class="hljs-built_in">write</span>(myFile.<span class="hljs-built_in">read</span>());
+    }
+    <span class="hljs-comment">// close the file:</span>
+    myFile.<span class="hljs-built_in">close</span>();
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// if the file didn't open, print an error:</span>
+    Serial.<span class="hljs-built_in">println</span>(<span class="hljs-string">"error opening test.txt"</span>);
+  }
+}
+
+<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">loop</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// nothing happens after setup</span>
+}
+</pre>
+
+    <div class="code-element-footer">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/adafruit/Adafruit_SPIFlash/blob/master/examples/SdFat_ReadWrite/SdFat_ReadWrite.ino">
+        <i class="fa fa-github"></i>
+        View on GitHub
+</a>    </div>
+</div>
+
+
+        <div class="element image-element" aria-label="Image: components_arduinoSerial.jpg">
+    <a href="https://learn.adafruit.com/assets/116707">
+        <img class="116707-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/707/small360/components_arduinoSerial.jpg?1668548894 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/707/medium640/components_arduinoSerial.jpg?1668548894 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/707/medium800/components_arduinoSerial.jpg?1668548894 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/707/large1024/components_arduinoSerial.jpg?1668548894 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_arduinoSerial.jpg" alt="components_arduinoSerial.jpg">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+      <div class="text-element">
+  
+  
+  
+        <p><span>Upload the read/write sketch to your board and open up the Serial Monitor (</span><strong>Tools -&gt; Serial Monitor</strong><span>) at 115200 baud. You'll see the initialization of the QSPI flash module over SPI. Then, a <code>text.txt</code> file is written to the flash chip. Finally, the contents of the <code>text.txt</code> file are read back and printed to the Serial Monitor.</span></p>
+      
+
+
+</div>
+
+  </div>
+
+
+              <div class="page-last-updated">
+  <p>Page last edited March 08, 2024</p>
+  <p>Text editor powered by <a href="https://www.tiny.cloud/">tinymce</a>.</p>
+</div>
+
+            </div>
+            <h2 class="title" aria-label="Page title">
+              <span id="downloads">Downloads</span>
+            </h2>
+
+            <div class="page-content">
+                <div class="" role="region" aria-label="Page content">
+      <div class="text-element">
+  
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#files-3131499" class="anchor-link"><span class="fa fa-link"></span></a><span id="files-3131499" class="anchor-link-target"></span>
+</div>Files</h2>
+<ul>
+<li><a href="https://cdn-learn.adafruit.com/assets/assets/000/116/709/original/datasheetQspi.pdf?1668549256">Flash Module Datasheet</a></li>
+<li><a href="https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&amp;partNo=W25Q16JV">W25Q16 Technical Documentation</a></li>
+<li><a href="https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&amp;partNo=W25Q64FV">W25Q64 Technical Documentation</a></li>
+<li><a href="https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&amp;partNo=W25Q128JV">W25Q128 Technical Documentation</a></li>
+<li><a href="https://github.com/adafruit/Adafruit-QSPI-DIP-Breakout-PCB">EagleCAD PCB files on GitHub</a></li>
+<li><a href="https://github.com/adafruit/Fritzing-Library/blob/master/parts/Adafruit%20QSPI%20DIP%20Breakout%20Board.fzpz">Fritzing object in the Adafruit Fritzing Library</a></li>
+</ul>
+      
+
+</div>
+
+      <div class="text-element">
+  
+        <h2>
+<div class="anchor-anchor">
+<a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#schematic-and-fab-print-3131500" class="anchor-link"><span class="fa fa-link"></span></a><span id="schematic-and-fab-print-3131500" class="anchor-link-target"></span>
+</div>Schematic and Fab Print</h2>
+<p>These apply to all versions of the board.</p>
+      
+</div>
+
+        <div class="element image-element" aria-label="Image: components_schemWithFrame.png">
+    <a href="https://learn.adafruit.com/assets/116699">
+        <img class="116699-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/699/small360/components_schemWithFrame.png?1668539786 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/699/medium640/components_schemWithFrame.png?1668539786 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/699/medium800/components_schemWithFrame.png?1668539786 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/699/large1024/components_schemWithFrame.png?1668539786 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_schemWithFrame.png" alt="components_schemWithFrame.png">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+        <div class="element image-element" aria-label="Image: components_fab.png">
+    <a href="https://learn.adafruit.com/assets/116697">
+        <img class="116697-asset" srcset="https://cdn-learn.adafruit.com/assets/assets/000/116/697/small360/components_fab.png?1668539235 360w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/697/medium640/components_fab.png?1668539235 640w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/697/medium800/components_fab.png?1668539235 800w,
+               https://cdn-learn.adafruit.com/assets/assets/000/116/697/large1024/components_fab.png?1668539235 1024w" sizes="(max-width: 360px) 360px, (max-width: 640px) 640px, (max-width: 800px) 800px, 1024px" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/components_fab.png" alt="components_fab.png">
+      <span class="image-expand"><i class="fa fa-search-plus"></i></span>
+</a>  </div>
+
+  </div>
+
+
+              <div class="page-last-updated">
+  <p>Page last edited March 08, 2024</p>
+  <p>Text editor powered by <a href="https://www.tiny.cloud/">tinymce</a>.</p>
+</div>
+
+            </div>
+    </div>
+  </div>
+</article>
+
+    <div class="related-guides-wrapper">
+  <section class="content-card-group-preview">
+  <div class="group-preview-headline">
+    <div class="title">
+      Related Guides
+    </div>
+
+    
+  </div>
+
+  <a class="scroll-back"><i class="fa fa-angle-left"></i></a>
+  <div class="content-card-group-container">
+    <div class="content-card-group">
+      <!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/neopixel-infinity-cube">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/859/medium640thumb/hero-loop.gif?1578975029" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/859/medium640mp4/hero-loop.mp4?1578975029"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/859/medium640webm/hero-loop.webm?1578975029" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide NeoPixel Infinity Cube.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/002/859/medium640thumb/hero-loop.gif?1578975029" aria-hidden="true" alt="The infinity cube" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/neopixel-infinity-cube">NeoPixel Infinity Cube</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              160
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/toddler-timer">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/174/medium640thumb/hero-loop.gif?1738638243" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/174/medium640mp4/hero-loop.mp4?1738638243"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/174/medium640webm/hero-loop.webm?1738638243" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide Toddler Timer.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/174/medium640thumb/hero-loop.gif?1738638243" aria-hidden="true" alt="visual countdown display " class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/toddler-timer">Toddler Timer</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+
+        <div class="badges">
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+            <div class="badge new">
+              New
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/funhouse-parking-assistant">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/339/medium640thumb/fh_parking.gif?1622418697" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/339/medium640mp4/fh_parking.mp4?1622418697"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/339/medium640webm/fh_parking.webm?1622418697" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide FunHouse Parking Assistant.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/339/medium640thumb/fh_parking.gif?1622418697" aria-hidden="true" alt="FunHouse Parking Assistant" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/funhouse-parking-assistant">FunHouse Parking Assistant</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/johnpark">
+        <span class="name">John Park</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              20
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/adafruit-cap1188-breakout">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/000/476/medium640/1602_LRG.jpg?1520541624" aria-hidden="true" alt="Adafruit CAP1188 Breakout" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/adafruit-cap1188-breakout">Adafruit CAP1188 Breakout</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/adafruit2">
+        <span class="name">lady ada</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              19
+            </div>
+
+          <div class="badge skill-level">
+            Intermediate
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/super-simple-sunrise-lamp">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/626/medium640thumb/out.gif?1657559164" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/626/medium640mp4/out.mp4?1657559164"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/626/medium640webm/out.webm?1657559164" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide Super Simple Sunrise Lamp.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/626/medium640thumb/out.gif?1657559164" aria-hidden="true" alt="A flat table lamp that is slowly turning on" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/super-simple-sunrise-lamp">Super Simple Sunrise Lamp</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/caternuson">
+        <span class="name">Carter Nelson</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              25
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/adafruit-max17048-lipoly-liion-fuel-gauge-and-battery-monitor">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/652/medium640/5580-06.jpg?1661955493" aria-hidden="true" alt="a MAX17048 plugged into a feather board and a lipo battery" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/adafruit-max17048-lipoly-liion-fuel-gauge-and-battery-monitor">Adafruit MAX17048 LiPoly / LiIon Fuel Gauge and...</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/BlitzCityDIY">
+        <span class="name">Liz Clark</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              22
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/3d-print-ratcatcher-2-controller-device-wand">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/402/medium640thumb/wand-loop-b.gif?1630415267" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/402/medium640mp4/wand-loop-b.mp4?1630415267"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/402/medium640webm/wand-loop-b.webm?1630415267" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide 3D Print Ratcatcher 2 Controller Device.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/402/medium640thumb/wand-loop-b.gif?1630415267" aria-hidden="true" alt="3D Print Ratcatcher 2 Controller Device" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/3d-print-ratcatcher-2-controller-device-wand">3D Print Ratcatcher 2 Controller Device</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              9
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/adafruit-metro-mini">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/734/medium640/2590-01.jpg?1502682497" aria-hidden="true" alt="Adafruit Metro Mini" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/adafruit-metro-mini">Adafruit Metro Mini</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/adafruit2">
+        <span class="name">lady ada</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              17
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/dune-worm-thumper">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/009/medium640thumb/thump-loop.gif?1717419241" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/009/medium640mp4/thump-loop.mp4?1717419241"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/009/medium640webm/thump-loop.webm?1717419241" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide Dune Worm Thumper.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/009/medium640thumb/thump-loop.gif?1717419241" aria-hidden="true" alt="Dune Worm Thumper" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/dune-worm-thumper">Dune Worm Thumper</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              12
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/light-meter">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/000/128/medium640/I2C-Light-Meter-Display.jpeg?1520539959" aria-hidden="true" alt="Light Meter" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/light-meter">Light Meter</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/danmalec">
+        <span class="name">Dan Malec</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              11
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/adafruit-tpl5111-reset-enable-timer-breakout">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/001/736/medium640/thimb.jpg?1520545489" aria-hidden="true" alt="Adafruit TPL5111 Reset Enable Timer Breakout" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/adafruit-tpl5111-reset-enable-timer-breakout">Adafruit TPL5111 Reset Enable Timer Breakout</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/adafruit2">
+        <span class="name">lady ada</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              17
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/zelda-tri-rod">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/098/medium640thumb/hero-loop-close.gif?1728398655" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/098/medium640mp4/hero-loop-close.mp4?1728398655"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/098/medium640webm/hero-loop-close.webm?1728398655" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide Zelda Echoes Of Wisdom Tri Rod.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/004/098/medium640thumb/hero-loop-close.gif?1728398655" aria-hidden="true" alt="Holding the tri-rod prop" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/zelda-tri-rod">Zelda Echoes Of Wisdom Tri Rod</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/pixil3d">
+        <span class="name">Ruiz Brothers</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              2
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/costume-triggers-and-switches">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/000/745/medium640/Screen_Shot_2014-09-23_at_10.17.35_PM.png?1520547246" aria-hidden="true" alt="Costume Triggers &amp; Actuators" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/costume-triggers-and-switches">Costume Triggers &amp; Actuators</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/bekathwia">
+        <span class="name">Becky Stern</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              76
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/esp32-s2-reverse-tft-feather">
+        <div class="image-container">
+              <video class="video-preview lazy" preload="auto" muted="muted" loop="loop" playsinline="" poster="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/742/medium640thumb/FRTFT_in_use_guide.gif?1675196342" data-error="/assets/missing%2Fmissing.png" 'aria-hidden'="true" data-loader="av">
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/742/medium640mp4/FRTFT_in_use_guide.mp4?1675196342"></data-src>
+        <data-src src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/742/medium640webm/FRTFT_in_use_guide.webm?1675196342" type="video/webm; codecs=vp8,vorbis"></data-src>
+        Your browser does not support the video tag. This links to the guide Adafruit ESP32-S2 Reverse TFT Feather.
+    </video>
+  <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/742/medium640thumb/FRTFT_in_use_guide.gif?1675196342" aria-hidden="true" alt="Reverse Feather TFT shown TFT-side-up, with information displayed on the screen. A thumb presses each button, and the applicable button shows up on the display." class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/esp32-s2-reverse-tft-feather">Adafruit ESP32-S2 Reverse TFT Feather</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/kattni">
+        <span class="name">Kattni Rembor</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              35
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Update templates/guides/guide.mustache in tandom -->
+<div class="guide-preview content-card">
+  <div class="preview-content">
+      <a aria-hidden="true" href="https://learn.adafruit.com/adafruit-vl53l1x">
+        <div class="image-container">
+            <img data-src="https://cdn-learn.adafruit.com/guides/cropped_images/000/003/449/medium640/VL53L1X_top_angle.jpg?1634922095" aria-hidden="true" alt="Adafruit VL53L1X Time of Flight Distance Sensor" class="image-preview lazy" src="data:,">
+
+        </div>
+</a>
+    <div class="bottom-section">
+      <div class="content">
+        <a class="title" aria-label="Guide title" href="https://learn.adafruit.com/adafruit-vl53l1x">Adafruit VL53L1X Time of Flight Distance Sensor</a>
+            <div class="author">
+      By
+      <a aria-label="Guide author" data-turbo="false" href="https://learn.adafruit.com/u/kattni">
+        <span class="name">Kattni Rembor</span>
+</a>    </div>
+
+
+        <div class="badges">
+            <div class="badge favorites " title="Saves">
+              24
+            </div>
+
+          <div class="badge skill-level">
+            Beginner
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <a class="scroll-forward"><i class="fa fa-angle-right"></i></a>
+</section>
+
+</div>
+
+
+
+
+<div class="dialog-container modal" id="create-wishlist-modal" data-modals-target="modal" aria-labelledby="dialog-title" aria-hidden="true">
+  <div class="dialog-overlay" data-a11y-dialog-hide=""></div>
+  <div class="dialog-content">
+    <div class="dialog-header">
+      <h5 class="dialog-title">Create Wishlist</h5>
+      <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#" class="dialog-close" data-a11y-dialog-hide="create-wishlist-modal" aria-label="Close this dialog window">×</a>
+    </div>
+    <form>
+      <div class="dialog-body">
+        <div class="form-group">
+          <label for="wishlist_title">Title</label>
+          <input type="text" name="wishlist_title" id="wishlist_title">
+        </div>
+
+        <div class="form-group">
+          <label for="wishlist_description">Description</label>
+          <textarea name="wishlist_description" id="wishlist_description"></textarea>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <input type="submit" name="commit" value="Create Wishlist" class="btn-primary" id="create-wishlist" data-disable-with="Create Wishlist">
+        <a href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all#" class="dialog-close" data-a11y-dialog-hide="create-wishlist-modal" aria-label="Close this dialog window">Close</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+        </div>
+
+        <div id="search-container">
+  <div class="toolbar-primary">
+    <div class="content">
+      <div class="left-content">
+        <div class="breadcrumbs">
+          <a href="https://learn.adafruit.com/" aria-label="Home page"><i class="fa fa-home"></i></a>
+          <i class="fa fa-chevron-right separator"></i> Search <i class="fa fa-chevron-right separator"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-header">
+    <div class="header-intro">
+      <h1 class="title">Search</h1>
+    </div>
+
+    <div class="header-main-content-wrapper">
+      <div class="header-main-content">
+        <div id="search-refinements" class="breakdown"><div class="ais-CurrentRefinements ais-CurrentRefinements--noRefinement"><ul class="ais-CurrentRefinements-list"></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-content left-sidebar-layout">
+    <div>
+      <div class="facets-wrapper">
+        <h5 class="search-refinement-header">Categories</h5>
+        <div id="search-categories"><div class="ais-HierarchicalMenu root ais-HierarchicalMenu--noRefinement"></div></div>
+      </div>
+    </div>
+
+    <div>
+      <div id="search-results" class="search-content-card-group"><div class="no-results">No results for query</div></div>
+
+      <div id="search-pagination" class="pagination"><div class="ais-Pagination ais-Pagination--noRefinement"><ul class="ais-Pagination-list"><li class="ais-Pagination-item item ais-Pagination-item--disabled disabled ais-Pagination-item--firstPage"><span class="ais-Pagination-link link" aria-label="First Page">«</span></li><li class="ais-Pagination-item item ais-Pagination-item--disabled disabled ais-Pagination-item--previousPage"><span class="ais-Pagination-link link" aria-label="Previous Page">‹</span></li><li class="ais-Pagination-item item ais-Pagination-item--page ais-Pagination-item--selected selected"><a class="ais-Pagination-link link" aria-label="Page 1" href="https://learn.adafruit.com/adafruit-qspi-dip-breakout-boards?view=all">1</a></li><li class="ais-Pagination-item item ais-Pagination-item--disabled disabled ais-Pagination-item--nextPage"><span class="ais-Pagination-link link" aria-label="Next Page">›</span></li><li class="ais-Pagination-item item ais-Pagination-item--disabled disabled ais-Pagination-item--lastPage"><span class="ais-Pagination-link link" aria-label="Last Page, Page 0">»</span></li></ul></div></div>
+    </div>
+  </div>
+</div>
+
+
+        <div id="remote-modal-wrapper"></div>
+        <div id="main-content-overlay"></div>
+      </main>
+        <footer id="adafruit-footer">
+    <div class="footer-container">
+      <div class="application-support-link">
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.adafruit.com/contact_us">Contact Us</a>
+            </li>
+            <li>
+              <a href="https://forums.adafruit.com/">Tech Support Forums</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/faq">FAQs</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/shippinginfo">Shipping &amp; Returns</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/free">Freebies</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/terms_of_service">Terms of Service</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/privacy">Privacy &amp; Legal</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/accessibility">Website Accessibility</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="https://www.adafruit.com/about">About Us</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/press">Press</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/educators">Educators</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/distributors">Distributors</a>
+            </li>
+            <li>
+              <a href="https://jobs.adafruit.com/">Jobs</a>
+            </li>
+            <li>
+              <a href="https://www.adafruit.com/category/14">Gift Cards</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <aside>
+        <div class="quote">"You're never too old, and if you want to, as my mother said, you can do anything you want to, but you have to work at it"</div>
+        <div class="quote-attribution"><a href="http://en.wikipedia.org/wiki/Annie_Easley">Annie Easley</a></div>
+      </aside>
+    </div>
+    <div class="footer-container bottom">
+      <a title="About Adafruit" id="footer-logo" href="https://learn.adafruit.com/">
+        <img alt="Adafruit Logo" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/adafruit_logo_small(1).png">
+</a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/adafruit/" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+        <a href="https://twitter.com/adafruit/" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+        <a class="mastodon-logo" href="https://mastodon.cloud/@adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Mastodon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216.4144 232.00976"><path class="logo" d="M211.80734 139.0875c-3.18125 16.36625-28.4925 34.2775-57.5625 37.74875-15.15875 1.80875-30.08375 3.47125-45.99875 2.74125-26.0275-1.1925-46.565-6.2125-46.565-6.2125 0 2.53375.15625 4.94625.46875 7.2025 3.38375 25.68625 25.47 27.225 46.39125 27.9425 21.11625.7225 39.91875-5.20625 39.91875-5.20625l.8675 19.09s-14.77 7.93125-41.08125 9.39c-14.50875.7975-32.52375-.365-53.50625-5.91875C9.23234 213.82 1.40609 165.31125.20859 116.09125c-.365-14.61375-.14-28.39375-.14-39.91875 0-50.33 32.97625-65.0825 32.97625-65.0825C49.67234 3.45375 78.20359.2425 107.86484 0h.72875c29.66125.2425 58.21125 3.45375 74.8375 11.09 0 0 32.975 14.7525 32.975 65.0825 0 0 .41375 37.13375-4.59875 62.915" fill="currentColor"></path><path d="M177.50984 80.077v60.94125h-24.14375v-59.15c0-12.46875-5.24625-18.7975-15.74-18.7975-11.6025 0-17.4175 7.5075-17.4175 22.3525v32.37625H96.20734V85.42325c0-14.845-5.81625-22.3525-17.41875-22.3525-10.49375 0-15.74 6.32875-15.74 18.7975v59.15H38.90484V80.077c0-12.455 3.17125-22.3525 9.54125-29.675 6.56875-7.3225 15.17125-11.07625 25.85-11.07625 12.355 0 21.71125 4.74875 27.8975 14.2475l6.01375 10.08125 6.015-10.08125c6.185-9.49875 15.54125-14.2475 27.8975-14.2475 10.6775 0 19.28 3.75375 25.85 11.07625 6.36875 7.3225 9.54 17.22 9.54 29.675" fill="#000"></path></svg></a>
+
+        <a href="https://www.facebook.com/adafruitindustries" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+        <a href="https://www.youtube.com/adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+
+        <a href="https://github.com/adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Github"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+        <a class="tiktok-logo" aria-label="Adafruit on TikTok" href="https://www.tiktok.com/@adafruit" target="_blank" rel="noopener noreferrer"><svg viewBox="3 2 20 22" xmlns="http://www.w3.org/2000/svg"><path class="logo" d="M19.8059 7.50695C18.7771 7.50695 17.8278 7.16612 17.0655 6.59113C16.1912 5.93198 15.5631 4.9651 15.3412 3.85069C15.2863 3.57534 15.2567 3.29119 15.2539 3H12.3149V11.0308L12.3114 15.4297C12.3114 16.6057 11.5455 17.6029 10.4839 17.9536C10.1758 18.0553 9.8431 18.1036 9.49663 18.0846C9.05438 18.0603 8.63995 17.9268 8.27975 17.7113C7.51322 17.2529 6.99351 16.4212 6.97942 15.4698C6.95724 13.9829 8.15933 12.7706 9.64522 12.7706C9.93852 12.7706 10.2202 12.8185 10.4839 12.9054V10.7104V9.92134C10.2058 9.88015 9.92268 9.85867 9.63641 9.85867C8.01004 9.85867 6.48894 10.5347 5.40164 11.7526C4.57982 12.6731 4.08687 13.8473 4.01082 15.0786C3.91117 16.6962 4.50306 18.2339 5.65093 19.3683C5.81959 19.5349 5.9967 19.6895 6.1819 19.8321C7.16604 20.5894 8.36919 21 9.63641 21C9.92268 21 10.2058 20.9789 10.4839 20.9377C11.6677 20.7623 12.7599 20.2204 13.6219 19.3683C14.681 18.3215 15.2662 16.9318 15.2726 15.4526L15.2574 8.88369C15.7627 9.27347 16.3152 9.596 16.9081 9.84635C17.8303 10.2354 18.8081 10.4326 19.8144 10.4322V8.29814V7.50625C19.8151 7.50695 19.8066 7.50695 19.8059 7.50695Z" fill="currentColor"></path></svg></a>
+
+        <a class="tumblr-logo" aria-label="Adafruit on Tumblr" href="https://adafruit.tumblr.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+
+        <a class="threads-logo" href="https://www.threads.net/@adafruit" target="_blank" rel="noopener noreferrer" aria-label="Adafruit on Threads"><span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M331.5 235.7c2.2 .9 4.2 1.9 6.3 2.8c29.2 14.1 50.6 35.2 61.8 61.4c15.7 36.5 17.2 95.8-30.3 143.2c-36.2 36.2-80.3 52.5-142.6 53h-.3c-70.2-.5-124.1-24.1-160.4-70.2c-32.3-41-48.9-98.1-49.5-169.6V256v-.2C17 184.3 33.6 127.2 65.9 86.2C102.2 40.1 156.2 16.5 226.4 16h.3c70.3 .5 124.9 24 162.3 69.9c18.4 22.7 32 50 40.6 81.7l-40.4 10.8c-7.1-25.8-17.8-47.8-32.2-65.4c-29.2-35.8-73-54.2-130.5-54.6c-57 .5-100.1 18.8-128.2 54.4C72.1 146.1 58.5 194.3 58 256c.5 61.7 14.1 109.9 40.3 143.3c28 35.6 71.2 53.9 128.2 54.4c51.4-.4 85.4-12.6 113.7-40.9c32.3-32.2 31.7-71.8 21.4-95.9c-6.1-14.2-17.1-26-31.9-34.9c-3.7 26.9-11.8 48.3-24.7 64.8c-17.1 21.8-41.4 33.6-72.7 35.3c-23.6 1.3-46.3-4.4-63.9-16c-20.8-13.8-33-34.8-34.3-59.3c-2.5-48.3 35.7-83 95.2-86.4c21.1-1.2 40.9-.3 59.2 2.8c-2.4-14.8-7.3-26.6-14.6-35.2c-10-11.7-25.6-17.7-46.2-17.8H227c-16.6 0-39 4.6-53.3 26.3l-34.4-23.6c19.2-29.1 50.3-45.1 87.8-45.1h.8c62.6 .4 99.9 39.5 103.7 107.7l-.2 .2zm-156 68.8c1.3 25.1 28.4 36.8 54.6 35.3c25.6-1.4 54.6-11.4 59.5-73.2c-13.2-2.9-27.8-4.4-43.4-4.4c-4.8 0-9.6 .1-14.4 .4c-42.9 2.4-57.2 23.2-56.2 41.8l-.1 .1z"></path></svg></span></a>
+
+        <a class="discord-logo" aria-label="Adafruit on Discord" href="https://adafru.it/discord" target="_blank" rel="noopener noreferrer"><svg style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"><path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"></path></svg></a>
+
+        <a class="bluesky-logo" aria-label="Adafruit on Bluesky" href="https://bsky.app/profile/adafruit.com" target="_blank" rel="noopener noreferrer"><svg style="height: 1em; margin-bottom: -0.15em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"></path></svg>
+</a>
+      </div>
+      <div class="footer-messaging">
+        <a href="https://www.adafruit.com/about">A Minority and Woman-owned Business Enterprise (M/WBE)</a>
+      </div>
+    </div>
+  </footer>
+
+    </div>
+  </div>
+
+
+
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1720153058307192");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1720153058307192&amp;ev=PageView&amp;noscript=1"></noscript><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./Overview _ Adafruit QSPI DIP Breakout Boards _ Adafruit Learning System_files/saved_resource.html"></iframe>
+
+
+</body></html>

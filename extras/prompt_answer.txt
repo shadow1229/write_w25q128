@@ -1,0 +1,69 @@
+Now I can use the agent mode!
+can you make a software that write given binary data on W25Q128JVSSIQ (It's quad SPI, or QSPI flash chip) and runs on Adafruit Feather M4?
+
+p.s) I've attached datasheet of W25Q128JV. Please note that the datasheet contains every products from W25Q128JV. (not only W25Q128JVSSIQ that uses QSPI, but also using DSPI or non-SPI models as well)
+
+
+Worked for 4 minutes
+
+Here’s a ready‑to‑use Arduino sketch for your Adafruit Feather M4 that programs a W25Q128JVSSIQ QSPI flash. The sketch uses the Adafruit SPIFlash library (installable via the Arduino Library Manager) and takes binary data streamed over the USB serial port, erases only the needed 4‑KiB sectors and programs the data a page (256 bytes) at a time using the microcontroller’s QSPI peripheral.
+
+Why it works
+
+The W25Q128JV’s Quad Page Program instruction programs up to 256 bytes on previously‑erased locations when the QE (Quad‑Enable) bit is set and a prior Write‑Enable (WEL) has been issued. The sketch relies on Adafruit’s library to handle the QE/WEL requirements and performs page‑sized writes.
+
+Sector Erase (0x20) clears a 4‑KiB sector to all 1s and also requires the Write‑Enable latch. The sketch calculates how many sectors are needed and erases only those sectors before programming.
+
+On the Feather M4 the QSPI flash is wired to dedicated pads and isn’t exposed on general‑purpose pins; the board must use the built‑in QSPI peripheral rather than a SERCOM SPI bus
+learn.adafruit.com
+. The Adafruit SPIFlash library provides this QSPI transport, so no manual pin assignment is required.
+
+How to use
+
+Install the Adafruit SPIFlash library via Arduino’s Library Manager.
+
+Open the provided .ino file and upload it to your Feather M4. After uploading, open the serial monitor at 115200 baud.
+
+Send your binary image over the serial port. The program expects a 32‑bit little‑endian length header followed immediately by the binary data. A simple Python script for sending a file is included in the sketch comments.
+
+The sketch erases the required sectors, writes the pages and prints progress messages. When done, it suggests verifying the data on the host since the MCU does not buffer the entire image for verification.
+
+You can download the sketch here: write_w25q128.ino Load it into the Arduino IDE, install the necessary library and follow the serial‑upload instructions. This will let you program any binary image onto the W25Q128JVSSIQ using your Feather M4.
+
+source: https://learn.adafruit.com/adafruit-feather-m4-express-atsamd51/pinouts
+
+//from here, it's mine.
+https://github.com/adafruit/Adafruit_SPIFlash
+https://android.googlesource.com/platform/external/arduino/+/refs/heads/tools_r21/hardware/arduino/cores/arduino/wiring_private.h
+
+Adafruit_FlashTransport.h - contains commands... (looks like there's a fixed command protocol between SPI chips)
+enum {
+  SFLASH_CMD_READ = 0x03,      // Single Read
+  SFLASH_CMD_FAST_READ = 0x0B, // Fast Read
+  SFLASH_CMD_QUAD_READ = 0x6B, // 1 line address, 4 line data
+
+  SFLASH_CMD_READ_JEDEC_ID = 0x9f,
+
+  SFLASH_CMD_PAGE_PROGRAM = 0x02,
+  SFLASH_CMD_QUAD_PAGE_PROGRAM = 0x32, // 1 line address, 4 line data
+
+  SFLASH_CMD_READ_STATUS = 0x05,
+  SFLASH_CMD_READ_STATUS2 = 0x35,
+
+  SFLASH_CMD_WRITE_STATUS = 0x01,
+  SFLASH_CMD_WRITE_STATUS2 = 0x31,
+
+  SFLASH_CMD_ENABLE_RESET = 0x66,
+  SFLASH_CMD_RESET = 0x99,
+
+  SFLASH_CMD_WRITE_ENABLE = 0x06,
+  SFLASH_CMD_WRITE_DISABLE = 0x04,
+
+  SFLASH_CMD_ERASE_PAGE = 0x81,
+  SFLASH_CMD_ERASE_SECTOR = 0x20,
+  SFLASH_CMD_ERASE_BLOCK = 0xD8,
+  SFLASH_CMD_ERASE_CHIP = 0xC7,
+
+  SFLASH_CMD_4_BYTE_ADDR = 0xB7,
+  SFLASH_CMD_3_BYTE_ADDR = 0xE9,
+};
